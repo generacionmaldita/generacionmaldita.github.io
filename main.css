@@ -1,0 +1,86 @@
+/* Inicio */
+
+body{
+	background-color:f4f4f4;
+	color:black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+/* Página principal */
+
+.contenedor{
+	width: 80%;
+	margin: auto;
+	overflow:hidden;
+}
+
+#main-header{
+	background-color: orange;
+	padding: 20px
+}
+
+#main-header h1{
+	text-align:center;
+	font-size: 40px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #006bb3;
+}
+
+a:visited{
+	color: #5900b3;
+}
+
+.seccion-1{
+	margin:40px 0;
+}
+
+.contenedor-bios{
+	display:flex;
+}
+
+.imagen-biografia{
+	flex:1;
+}
+
+.biografia{
+	flex:2;
+}
+
+.biografia p{
+	text-align: justify;
+}
+
+@media(max-width:768px){
+	body{
+		font-size: 20px;
+		text-align: center;
+	}
+
+	#main-header h1{
+		font-size: 30px;
+	}
+
+	.seccion-1 ul{
+		padding: 0;
+		list-style-type: none;
+	}
+
+	/* Biografias */ 
+
+	.contenedor-bios{
+		display:block;
+	}
+
+	.biografia ul{
+		padding: 0;
+	}
+
+}
