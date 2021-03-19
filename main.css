@@ -1,7 +1,7 @@
 /* Inicio */
 
 body{
-	background-color:f4f4f4;
+	background-color: #f4f4f4;
 	color:black;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
@@ -13,7 +13,7 @@ body{
 /* Página principal */
 
 .contenedor{
-	width: 80%;
+	width: 65vw;
 	margin: auto;
 	overflow:hidden;
 }
@@ -29,34 +29,79 @@ body{
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-a{
+#main-header ul{
+	text-align: center;
+	font-size: 20px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#main-header a, #main-header a:visited{
+	color: #000000;
+}
+
+#main-header a:hover{
+	color: #ffffff;
+}
+
+a, a:visited{
 	text-decoration: none;
 	color: #006bb3;
 }
 
-a:visited{
-	color: #5900b3;
+a:hover{
+	color:#0090f2;
 }
 
 .seccion-1{
 	margin:40px 0;
 }
 
+/* Biografias */
+
+#biografias h1{
+	text-align:center;
+	font-size: 30px;
+	padding: 10px;
+}
+
 .contenedor-bios{
-	display:flex;
+	display: flex;
+	align-items: flex-start;
 }
 
 .imagen-biografia{
 	flex:1;
+	width:50px;
+	object-fit: contain;
 }
 
 .biografia{
 	flex:2;
+	padding-left: 15px;
 }
 
 .biografia p{
 	text-align: justify;
+	margin-top: 0;
 }
+
+/* Conciertos */
+
+.conciertos h1{
+	font-size: 30px;
+	text-align: center;
+}
+
+.imagen-concierto{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/* Smartphone view */
 
 @media(max-width:768px){
 	body{
@@ -77,6 +122,13 @@ a:visited{
 
 	.contenedor-bios{
 		display:block;
+	}
+
+	.imagen-biografia{
+		flex:1;
+		height:250px;
+		width:auto;
+		object-fit: contain;
 	}
 
 	.biografia ul{
