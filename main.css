@@ -19,12 +19,12 @@ body{
 }
 
 #main-header{
-	background-color: orange;
-	padding: 20px
+	/* background-color: orange; */
+	padding-top: 30px;
 }
 
 #main-header h1{
-	text-align:center;
+	text-align: center;
 	font-size: 40px;
 	font-family: Verdana, Geneva, sans-serif;
 }
@@ -37,12 +37,9 @@ body{
 	padding: 0;
 }
 
-#main-header a, #main-header a:visited{
-	color: #000000;
-}
-
-#main-header a:hover{
-	color: #ffffff;
+#main-header li{
+	display: inline;
+	padding: 10px 10px
 }
 
 a, a:visited{
