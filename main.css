@@ -55,6 +55,22 @@ a:hover{
 	margin:40px 0;
 }
 
+.center-flex{
+	display: flex;
+}
+
+.banner{
+	flex: 2;
+	width: 25px;
+	padding: 25px;
+	object-fit: cover;
+}
+
+.members{
+	flex: 1;
+	padding-left: 25px;
+}
+
 /* Biografias */
 
 #biografias h1{
@@ -130,6 +146,21 @@ a:hover{
 
 	.biografia ul{
 		padding: 0;
+	}
+
+	.center-flex{
+		display: block;
+	}
+
+	.banner{
+		display: none;
+		width: 25px;
+		padding: 25px;
+		object-fit: cover;
+	}
+
+	.members{
+		padding-left: 0;
 	}
 
 }
