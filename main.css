@@ -12,7 +12,7 @@ body{
 
 /* Página principal */
 
-.contenedor{
+.container{
 	width: 65vw;
 	margin: auto;
 	overflow:hidden;
@@ -55,7 +55,7 @@ a:hover{
 	color:#0090f2;
 }
 
-.seccion-1{
+.section-1{
 	margin:40px 0;
 }
 
@@ -77,29 +77,29 @@ a:hover{
 
 /* Biografias */
 
-#biografias h1{
+#bio h1{
 	text-align:center;
 	font-size: 30px;
 	padding: 10px;
 }
 
-.contenedor-bios{
+.bio-flex{
 	display: flex;
 	align-items: flex-start;
 }
 
-.imagen-biografia{
-	flex:1;
-	width:50px;
+.bio-img{
+	flex: 1;
+	width: 50px;
 	object-fit: contain;
 }
 
-.biografia{
-	flex:2;
+.biography{
+	flex: 2;
 	padding-left: 15px;
 }
 
-.biografia p{
+.biography p{
 	text-align: justify;
 	margin-top: 0;
 }
@@ -111,11 +111,20 @@ a:hover{
 	text-align: center;
 }
 
-.imagen-concierto{
+figure.concerts{
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	width: 300px;
+}
+
+.concert-img{
+	width: 300px;
+}
+
+.caption{
+	text-align: center;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
 }
 
 /* Smartphone view */
@@ -128,27 +137,28 @@ a:hover{
 
 	#main-header h1{
 		font-size: 30px;
+		line-height: 35px;
 	}
 
-	.seccion-1 ul{
+	.section-1 ul{
 		padding: 0;
 		list-style-type: none;
 	}
 
 	/* Biografias */ 
 
-	.contenedor-bios{
+	.bio-flex{
 		display:block;
 	}
 
-	.imagen-biografia{
+	.bio-img{
 		flex:1;
 		height:250px;
 		width:auto;
 		object-fit: contain;
 	}
 
-	.biografia ul{
+	.biography ul{
 		padding: 0;
 	}
 
