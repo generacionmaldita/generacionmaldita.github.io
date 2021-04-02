@@ -19,7 +19,6 @@ body{
 }
 
 #main-header{
-	/* background-color: orange; */
 	padding-top: 30px;
 }
 
@@ -104,18 +103,38 @@ a:hover{
 	margin-top: 0;
 }
 
-/* Conciertos */
+/* Concert */
 
 .conciertos h1{
 	font-size: 30px;
 	text-align: center;
 }
 
-figure.concerts{
+.container-concerts{
+	display: grid;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	align-items: center;
+}
+
+figure.concerts-row-1{
+	flex: 1;
 	vertical-align: top;
-	display: inline-block;
 	text-align: center;
 	width: 300px;
+}
+
+.concert-flex-item{
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 200px;
+	justify-content: flex-start;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
 }
 
 .concert-img{
@@ -123,6 +142,7 @@ figure.concerts{
 }
 
 .caption{
+	width: 300px;
 	text-align: center;
 	display: block;
 }
@@ -175,6 +195,26 @@ figure.concerts{
 
 	.members{
 		padding-left: 0;
+	}
+
+	/* Concerts */
+
+	figure.concerts{
+		vertical-align: top;
+		display: block;
+		text-align: center;
+		width: auto;
+	}
+
+	.concert-img{
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.caption{
+		text-align: center;
+		display: block;
 	}
 
 }
